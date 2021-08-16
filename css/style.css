@@ -139,6 +139,11 @@ header .fa-bars {
     display: none;
 }
 
+header .logo{
+    width: 160px;
+    margin-top: -26px;
+}
+
 .home {
     min-height: 100vh;
     display: flex;
