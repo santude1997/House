@@ -46,7 +46,7 @@ html {
     left: 0;
     height: 100%;
     width: 100%;
-    background: var(--green);
+    background: #D800E5;
     z-index: -1;
     transition: all 0.5s cubic-bezier(.37, 1.14, .26, 1.24);
 }
@@ -71,12 +71,138 @@ html {
     color: #fff;
 }
 
+.vid {
+    width: 80vh;
+}
+
+.home-services {
+    background-color: #f8f9fa;
+}
+
+.box-wrap {
+    margin-top: 30px;
+    padding: 40px 30px;
+    transition: all 0.5s ease 0s;
+    border-radius: 8px;
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
+    background-color: #fff;
+    position: relative;
+}
+
+.box-wrap:hover {
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
+}
+
+.box-wrap:hover h4.number {
+    opacity: .2;
+    transition: 0.3s ease-in-out;
+}
+
+.box-wrap img {
+    max-width: 55px;
+    display: block;
+    margin: 0 auto;
+}
+
+.box-wrap h4 a {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    display: block;
+    color: #6639a6;
+}
+
+.box-wrap h4 a:hover {
+    color: #D800E5;
+}
+
+a.read {
+    font-size: 17px;
+    padding: 0;
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--heading-color);
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    border-radius: 0;
+    margin-top: 20px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+h4.number {
+    position: absolute;
+    font-size: 60px;
+    line-height: 60px;
+    right: 40px;
+    top: 30px;
+    opacity: .07;
+    transition: 0.3s ease-in-out;
+}
+
+.box-wrap p {
+    margin: 0;
+    color: var(--para-color);
+}
+
+.search-box .icon {
+    text-align: center;
+    display: block;
+    color: #D800E5;
+}
+
+.icon span.fa {
+    color: hotpink;
+    font-size: 30px;
+}
+
+.w3l-stats {
+    background-color: #f8f9fa;
+}
+
+.w3l-stats .grids-speci1 {
+    padding: 40px 30px;
+    transition: all 0.5s ease 0s;
+    border-radius: 8px;
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
+    background-color: #fff;
+    position: relative;
+}
+
+.w3l-stats .grids-speci1 span {
+    right: 10px;
+    color: #D800E5;
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    opacity: 0.05;
+    transform: scale(1);
+    transition: 0.3s ease;
+}
+
+.w3l-stats .grids-speci1:hover span.fa {
+    opacity: 0.8;
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.w3l-stats h3.title-spe {
+    color: var(--primary-color);
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.w3l-stats .grids-speci1 p {
+    font-size: 17px;
+    color: var(--para-color);
+}
+
 .heading {
     text-align: center;
     font-size: 4rem;
-    color: palevioletred;
+    color: #D800E5;
     padding: 1rem;
-    padding-top: 7rem;
+    padding-top: 0rem;
 }
 
 .heading i {
@@ -91,12 +217,12 @@ header {
     background: #6639a6;
     box-shadow: 0 0.1rem 0.3rem rgb(0 0 0 / 30%);
     position: fixed;
-    top: -2px;
+    top: 0rem;
     left: 0;
     z-index: 1000;
-    padding: 4rem 5rem;
+    padding: 3rem 5rem;
     width: 100%;
-    height: 0px;
+    height: 0rem;
 }
 
 header .fa-bars:before {
@@ -105,9 +231,12 @@ header .fa-bars:before {
 }
 
 header .logo {
-    color: var(--green);
-    font-size: 3rem;
-    margin-top: 22px;
+    color: #D800E5;
+    margin-top: 0rem;
+}
+
+.logo img {
+    width: 11rem;
 }
 
 header .navbar ul {
@@ -129,7 +258,7 @@ header .navbar ul li a {
 }
 
 header .navbar ul li a:hover {
-    color: palevioletred;
+    color: #D800E5;
 }
 
 header .fa-bars {
@@ -137,11 +266,6 @@ header .fa-bars {
     color: #666;
     cursor: pointer;
     display: none;
-}
-
-header .logo img{
-    width: 160px;
-    margin-top: -26px;
 }
 
 .home {
@@ -162,12 +286,12 @@ header .logo img{
 
 .home .content h1 {
     font-size: 7rem;
-    color: var(--green);
+    color: #5c5c2a;
 }
 
 .home .content p {
     font-size: 1.9rem;
-    color: #fff;
+    color: #333;
     padding: 1rem 0;
     width: 70rem;
 }
@@ -294,10 +418,6 @@ header .logo img{
     min-height: 100vh;
 }
 
-.project .heading {
-    color: #fff;
-}
-
 .project .box-container {
     display: flex;
     align-items: center;
@@ -382,20 +502,20 @@ header .logo img{
 .work-right-text h2 {
     color: #fff;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 3rem;
 }
 
 .work-right-text h5 {
     color: #fff;
-    font-size: 18px;
+    font-size: 1.5rem;
     font-weight: 700;
-    line-height: 34px;
+    line-height: 3rem;
     text-transform: uppercase;
 }
 
 .work-right-text .sus-btn {
     margin-left: 0;
-    margin-top: 20px;
+    margin-top: 1rem;
 }
 
 .single-awesome-4 {
@@ -406,12 +526,12 @@ header .logo img{
 }
 
 .single-awesome-4 .add-actions {
-    padding: 10px 20px;
+    padding: 0.5rem 1rem;
 }
 
 .ready-btn {
     border: 1px solid rgb(255, 255, 255);
-    border-radius: 30px;
+    border-radius: 2rem;
     color: rgb(255, 255, 255);
     cursor: pointer;
     display: inline-block;
@@ -427,7 +547,7 @@ header .logo img{
 }
 
 .ready-btn:hover {
-    color: #6639a6;
+    color: #D800E5;
 }
 
 
@@ -435,14 +555,14 @@ header .logo img{
 --------------------------------------------------------------*/
 
 .area-padding {
-    padding: 18px;
+    padding: 2rem;
 }
 
 .team-member {
     background: rgba(0, 0, 0, 0.65) none repeat scroll 0 0;
     display: block;
-    margin-right: -15px;
-    padding: 10px;
+    margin-right: -1.5rem;
+    padding: 1rem;
     position: relative;
     overflow: hidden;
 }
@@ -453,8 +573,8 @@ header .logo img{
     display: block;
     height: 100%;
     left: 0;
-    margin-right: -15px;
-    padding: 10px;
+    margin-right: -1rem;
+    padding: 1rem;
     position: absolute;
     top: 0;
     width: 100%;
@@ -476,7 +596,7 @@ header .logo img{
 
 .team-left-text h4 {
     color: #fff;
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -608,8 +728,8 @@ header .logo img{
 
 .team-social-icon ul li a:hover {
     color: #fff;
-    border: 1px solid #3EC1D5;
-    background: #3EC1D5;
+    border: 1px solid #6639a6;
+    background: #D800E5;
 }
 
 .team-content {
@@ -716,7 +836,7 @@ select {
 .contact .form-container form input[type="submit"]:hover {
     color: var(--green);
     /* border-color: var(--green); */
-    background: palevioletred;
+    background: #D800E5;
 }
 
 .post {
@@ -869,19 +989,19 @@ select {
 
 .section-headline h2 {
     font-size: 3rem;
-    color: palevioletred;
+    color: #D800E5;
 }
 
 
 /* media queries  */
 
 @media (max-width:768px) {
-   body {
+    body {
         width: 77vh;
     }
     html {
         font-size: 55%;
-        width: 80vh;
+        width: 75vh;
     }
     header .fa-bars {
         display: block;
@@ -898,7 +1018,7 @@ select {
         flex-flow: column;
         padding: 2rem 0;
         background-color: #6639a6;
-        width: 80vh;
+        width: 75vh;
     }
     header .navbar ul li {
         width: 100%;
@@ -926,12 +1046,12 @@ select {
         width: auto;
     }
     .area-padding {
-        padding: 18px;
+        padding: 2rem;
         width: 72vh;
     }
     .team-img>a {
         display: block;
-        padding: 52px;
+        padding: 5rem;
     }
 }
 
